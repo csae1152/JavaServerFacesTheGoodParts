@@ -18,6 +18,14 @@ JSF 2.0 splits the JSF life cycle into two parts:
 1. execute (components are executed)
 2. render
 
+Custom Components:
+
+1. Saving and Restoring State
+
+The JSF implementation saves and restores the view state between requests.
+
+<code>public Object saveState(FacesContext context)</code>
+
 
 
 
