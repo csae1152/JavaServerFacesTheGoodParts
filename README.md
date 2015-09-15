@@ -26,6 +26,12 @@ The JSF implementation saves and restores the view state between requests.
 
 <code>public Object saveState(FacesContext context)</code>
 
+2. Facelets
+
+Facelet tags can be grouped in these categories:
+
+Including content from other XHTML pages - <code>ui:include</code>
+
 
 
 
