@@ -39,9 +39,7 @@ declaring any transactions:
   
   public int checkCredentials(String name, String password) {
    Query query  = em.createQuery(...).setParameter("username", name);
-   ...
   }
- 
  }
 </code>
 
