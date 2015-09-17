@@ -26,11 +26,26 @@ The JSF implementation saves and restores the view state between requests.
 
 <code>public Object saveState(FacesContext context)</code>
 
-2. Facelets
+2. Using Managed Beans and Stateless Session Beans
 
-Facelet tags can be grouped in these categories:
+A stateless session bean is annoted with @Stateless. You inject an entity manager and simply use it, without 
+declaring any transactions:
 
-Including content from other XHTML pages - <code>ui:include</code>
+<code>
+ @Stateless
+ public class CredentialManager {
+  @PersistenceContext(unitName="default")
+  private EntityManager em;
+  
+  public int checkCredentials(String name, String password) {
+   Query query  = em.createQuery(...).setParameter("username", name);
+   ...
+  }
+ 
+ }
+</code>
+
+
 
 
 
