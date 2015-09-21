@@ -43,6 +43,20 @@ declaring any transactions:
  }
 </code>
 
+Event Handling
+==============
+
+Events and the JSF Life Cycle
+Value Change Events
+Action Events
+Event Listener Tags
+ f:actionListener and f:valueChangeListener
+ Tags
+Immediate Components
+Passing Data from the UI to the Server
+Phase Events
+System Events
+
 
 
 
