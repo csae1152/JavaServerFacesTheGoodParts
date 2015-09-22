@@ -57,6 +57,14 @@ Passing Data from the UI to the Server
 Phase Events
 System Events
 
+ad 1)
+
+Requests in JSF applications are processed by the JSF implementation with a controller servlet, which in turn executes the JSF life cycle. 
+
+Starting with the Apply Request Value phase, the JSF implementation may create events and add them to an event queue during each life cycle phase. After those phases, the JSF implementation broadcasts queued events to registered listeners.
+
+
+
 
 
 
