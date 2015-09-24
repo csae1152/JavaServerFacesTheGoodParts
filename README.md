@@ -67,16 +67,10 @@ ad 2)
 
 Components in a web application often depend on each other ( yes, they do :-) ). 
 
-for example:
+Like all value change listeners, the preceding listener is passed a value change event. The listener uses that event to access the component's new value.
 
- <h:selectOnMenu value="#{form.country}" onchange="submit()"
-  valueChangeListener="#{form.countryChanged}">
-   <f:selectItems value="#{form.countries}" var="loc"
-    itemLabel="#{loc.displayCountry}" itemValue="#{loc.country}"/>
- </h:selectOneMenu>
+That form submit is crucial because the JSF implementation handles all events on the server.
 
- 
- Here, #{form.countries} is bound to an array of Local objects.
 
 
 
