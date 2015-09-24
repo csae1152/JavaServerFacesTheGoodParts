@@ -63,6 +63,24 @@ Requests in JSF applications are processed by the JSF implementation with a cont
 
 Starting with the Apply Request Value phase, the JSF implementation may create events and add them to an event queue during each life cycle phase. After those phases, the JSF implementation broadcasts queued events to registered listeners.
 
+ad 2)
+
+Components in a web application often depend on each other ( yes, they do :-) ). 
+
+for example:
+
+<code>
+ <h:selectOnMenu value="#{form.country}" onchange="submit()"
+  valueChangeListener="#{form.countryChanged}">
+   <f:selectItems value="#{form.countries}" var="loc"
+    itemLabel="#{loc.displayCountry}" itemValue="#{loc.country}"/>
+ </h:selectOneMenu>
+ </code>
+ 
+ Here, #{form.countries} is bound to an array of Local objects.
+
+
+
 
 
 
