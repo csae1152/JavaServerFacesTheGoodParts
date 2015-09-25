@@ -71,6 +71,14 @@ Like all value change listeners, the preceding listener is passed a value change
 
 That form submit is crucial because the JSF implementation handles all events on the server.
 
+ad 3)
+
+Action events are fired by buttons and links. 
+
+Command components submit requests when they are activated, so there is no need to use onchange to force submits as we did with value change events in "Value Change Events". 
+
+It's important to distinguish between action listener and actions. In a nutshell, actions are designed fur business logic and participate in navigation handling.
+
 
 
 
