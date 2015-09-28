@@ -79,6 +79,15 @@ Command components submit requests when they are activated, so there is no need 
 
 It's important to distinguish between action listener and actions. In a nutshell, actions are designed fur business logic and participate in navigation handling.
 
+Ajax and JSF
+
+Conceptually, Ajax is simple. In fact, Ajax requests differ from regular HTTP requests in only two ways:
+
+1. Ajax partially processes forms on the server during the Ajax call.
+2. Ajax partially renders DOM elements on the client after the Ajax call returns from the server.
+
+
+
 
 
 
