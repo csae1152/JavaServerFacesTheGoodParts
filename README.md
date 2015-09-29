@@ -43,6 +43,15 @@ declaring any transactions:
  }
 </code>
 
+RESTful Navigation and Bookmarkable URLs
+========================================
+
+By default, a JSF application makes a sequence of POST requests to the server.
+
+Each POST contains form data. This makes sense for an application that collects lots of user input. But much of the web doesn't work like that. 
+
+An architectural style called REST advocates that web applications should use HTTP as it was originally envisioned. Lookups should use GET requests. PUT, POST and DELETE requests should be used for creation, mutation and deletion.
+
 Event Handling
 ==============
 
@@ -85,6 +94,9 @@ Conceptually, Ajax is simple. In fact, Ajax requests differ from regular HTTP re
 
 1. Ajax partially processes forms on the server during the Ajax call.
 2. Ajax partially renders DOM elements on the client after the Ajax call returns from the server.
+
+ 
+
 
 
 
