@@ -100,6 +100,10 @@ Problems with JSF execute and render
 
 You can use render="@this" or render="@form" for rendering particular parts of your page.
 
+What exactly is seam weld:
+
+Well it's just shifting the CDI reference implementation to Tomcat, or what do you think ?
+
  
 
 
