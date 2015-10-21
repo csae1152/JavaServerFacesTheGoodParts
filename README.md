@@ -95,6 +95,11 @@ Conceptually, Ajax is simple. In fact, Ajax requests differ from regular HTTP re
 1. Ajax partially processes forms on the server during the Ajax call.
 2. Ajax partially renders DOM elements on the client after the Ajax call returns from the server.
 
+Problems with JSF execute and render
+====================================
+
+You can use render="@this" or render="@form" for rendering particular parts of your page.
+
  
 
 
