@@ -98,9 +98,12 @@ Conceptually, Ajax is simple. In fact, Ajax requests differ from regular HTTP re
 Problems with JSF execute and render
 ====================================
 
-You can use render="@this" or render="@form" for rendering particular parts of your page.
+You can use render="@this" for rendering particular parts of your page.
+You can use render="@form" for rendering the whole form focussed on.
+You can use render="@all" for rendering the whole view in the underlaying container.
 
 What exactly is seam weld:
+==========================
 
 Well it's just shifting the CDI reference implementation to Tomcat, or what do you think ?
 
