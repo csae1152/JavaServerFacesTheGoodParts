@@ -107,6 +107,15 @@ What exactly is seam weld:
 
 Well it's just shifting the CDI reference implementation to Tomcat, or what do you think ?
 
+Managed Beans
+=============
+
+A central theme of web application design is the seperation of presentation and business logic.
+
+JSF uses beans to achieve this seperation. JSF pages refer to bean properties, and th program logic is contained in the
+bean implementation code. Because beans are so fundamental to JSF programming, we discuss them in detail here.
+
+
  
 
 
