@@ -115,6 +115,17 @@ A central theme of web application design is the seperation of presentation and 
 JSF uses beans to achieve this seperation. JSF pages refer to bean properties, and th program logic is contained in the
 bean implementation code. Because beans are so fundamental to JSF programming, we discuss them in detail here.
 
+Different bean scopes:
+======================
+
+@RequestScoped
+@ViewScoped
+@FlowScoped
+@SessionScoped
+@ApplicationScoped
+
+A @RequestScoped bean lives as long as a single HTTP request-response cycle (note that an Ajax request counts as a single HTTP request too). A @ViewScoped bean lives as long as you're interacting with the same JSF view by postbacks which call action methods returning null/void without any navigation/redirect. A @FlowScoped bean lives as long as you're navigating through the specified collection of views registered in the flow configuration file. A @SessionScoped bean lives as long as the established HTTP session. An @ApplicationScoped bean lives as long as the web application runs.
+
 
  
 
